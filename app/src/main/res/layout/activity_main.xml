@@ -6,13 +6,53 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <Button
+        android:id="@+id/buttonTrue"
+        android:layout_width="123dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="52dp"
+        android:text="Правда"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quesiotionTextView"
+        app:layout_constraintVertical_bias="0.213" />
 
+    <TextView
+        android:id="@+id/quesiotionTextView"
+        android:layout_width="280dp"
+        android:layout_height="153dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.325" />
+
+    <Button
+        android:id="@+id/buttonFalse"
+        android:layout_width="124dp"
+        android:layout_height="65dp"
+        android:text="Ложь"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toEndOf="@+id/buttonTrue"
+        app:layout_constraintTop_toBottomOf="@+id/quesiotionTextView"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <TextView
+        android:id="@+id/leaveTextView"
+        android:layout_width="134dp"
+        android:layout_height="44dp"
+        android:text="Жизнь: "
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/quesiotionTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.532" />
 </androidx.constraintlayout.widget.ConstraintLayout>
